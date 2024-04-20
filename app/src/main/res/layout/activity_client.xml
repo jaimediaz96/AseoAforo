@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ClientActivity">
+
+    <TextView
+        android:id="@+id/tvClientTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="MICRO_RUTA 1234556" />
+
+    <View
+        android:id="@+id/vClientHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvClientTitle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clClientRouteInfo"
+        style="@style/Theme.AseoAforos.client"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vClientHr">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clClientRouteLabels"
+            style="@style/Theme.AseoAforos.container.client"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/clClientRouteValues"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clClientRouteName"
+                style="@style/Theme.AseoAforos.container"
+                app:layout_constraintBottom_toTopOf="@id/clClientRouteDescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvClientRoute"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18.clientLeft"
+                    android:text="@string/route"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvClientRouteValue"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvClientRoute"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="AZUL" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clClientRouteDescription"
+                style="@style/Theme.AseoAforos.container"
+                app:layout_constraintBottom_toTopOf="@id/clClientMicroRouteName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clClientRouteName">
+
+                <TextView
+                    android:id="@+id/tvClientMunicipality"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18.clientLeft"
+                    android:text="@string/municipality"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvClientMunicipalityValue"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvClientMunicipality"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="FUNZA" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clClientMicroRouteName"
+                style="@style/Theme.AseoAforos.container"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clClientRouteDescription">
+
+                <TextView
+                    android:id="@+id/tvClientMicroRoute"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18.clientLeft"
+                    android:text="@string/clock"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Chronometer
+                    android:id="@+id/tvClientMicroRouteTime"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvClientMicroRoute"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="12345" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clClientRouteValues"
+            style="@style/Theme.AseoAforos.container"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/clClientRouteLabels"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clClientTruck"
+                style="@style/Theme.AseoAforos.container"
+                app:layout_constraintBottom_toTopOf="@id/clClientDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvClientPlate"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18.clientLeft"
+                    android:text="@string/capacity"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvClientCapacityValue"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/ivClientCapacity"
+                    app:layout_constraintStart_toEndOf="@id/tvClientPlate"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="85 %" />
+
+                <ImageView
+                    android:id="@+id/ivClientCapacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:contentDescription="@string/truck"
+                    android:src="@drawable/vector_truck_mini"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvClientCapacityValue"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clClientDate"
+                style="@style/Theme.AseoAforos.container"
+                app:layout_constraintBottom_toTopOf="@id/clClientProgress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clClientTruck">
+
+                <TextView
+                    android:id="@+id/tvClientDate"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18.clientLeft"
+                    android:text="@string/date"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvClientDateValue"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvClientDate"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="8 MARZO 2024" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clClientProgress"
+                style="@style/Theme.AseoAforos.container"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clClientDate">
+
+                <TextView
+                    android:id="@+id/tvClientProgress"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18.clientLeft"
+                    android:text="@string/progress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvClientProgressValue"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvClientProgress"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="155 RECOLECTADOS DE 143" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/etClientSearch"
+        style="@style/Theme.AseoAforos.client"
+        android:layout_height="48dp"
+        android:autofillHints="name"
+        android:drawableStart="@drawable/vector_search"
+        android:hint="@string/searchClient"
+        android:inputType="text"
+        android:padding="5dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clClientRouteInfo" />
+
+    <Button
+        android:id="@+id/btnClientNewAforo"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/newCollect"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@id/btnClientPauseAforo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etClientSearch" />
+
+    <Button
+        android:id="@+id/btnClientPauseAforo"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/pauseCollect"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnClientNewAforo"
+        app:layout_constraintTop_toBottomOf="@id/etClientSearch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcClientList"
+        style="@style/Theme.AseoAforos.client"
+        app:layout_constraintBottom_toTopOf="@id/btnClientFinishRoute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnClientPauseAforo" />
+
+    <Button
+        android:id="@+id/btnClientFinishRoute"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_width="550dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/finishRoute"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

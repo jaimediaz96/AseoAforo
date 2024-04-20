@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.CollectActivity">
+
+    <TextView
+        android:id="@+id/tvCollectTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:text="@string/collect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vCollectHrTitle"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCollectTitle" />
+
+    <TextView
+        android:id="@+id/tvCollectType"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        android:text="@string/type"
+        app:layout_constraintBottom_toTopOf="@id/tvCollectClientName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vCollectHrTitle" />
+
+    <TextView
+        android:id="@+id/tvCollectClientName"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toTopOf="@id/tvCollectClientAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCollectType"
+        tools:text="TECNOLOGÍA INDUSTRIAL AVANZADA S.A." />
+
+    <TextView
+        android:id="@+id/tvCollectClientAddress"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toTopOf="@id/vCollectHr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCollectClientName"
+        tools:text="AVE, SEC IND MEDELLÍN, BOD 12, PARQUE DE NEGOCIOS LA ESPERANZA" />
+
+    <TextView
+        android:id="@+id/tvCollectCollect"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvCollectType"
+        app:layout_constraintTop_toBottomOf="@id/vCollectHrTitle"
+        tools:text="AFORO POR VOLUMEN" />
+
+    <View
+        android:id="@+id/vCollectHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCollectClientAddress" />
+
+    <TextView
+        android:id="@+id/tvCollectLabelCheck"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        android:text="@string/labelCheck"
+        app:layout_constraintBottom_toTopOf="@id/tvCollectNoCollect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vCollectHr" />
+
+    <CheckBox
+        android:id="@+id/cbCollectCheck"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        app:layout_constraintBottom_toTopOf="@id/spinCollectCodeNoCollect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvCollectLabelCheck"
+        app:layout_constraintTop_toBottomOf="@id/vCollectHr" />
+
+    <TextView
+        android:id="@+id/tvCollectNoCollect"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        android:text="@string/noCollect"
+        app:layout_constraintBottom_toTopOf="@id/vCollectHrList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCollectLabelCheck" />
+
+    <Spinner
+        android:id="@+id/spinCollectCodeNoCollect"
+        style="@style/Theme.AseoAforos.spinCollect"
+        app:layout_constraintBottom_toTopOf="@id/vCollectHrList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvCollectNoCollect"
+        app:layout_constraintTop_toBottomOf="@id/cbCollectCheck" />
+
+    <View
+        android:id="@+id/vCollectHrList"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinCollectCodeNoCollect" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcCollectList"
+        style="@style/Theme.AseoAforos.client"
+        android:paddingTop="35dp"
+        app:layout_constraintBottom_toTopOf="@id/tvCollectTypeTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vCollectHrList" />
+
+    <TextView
+        android:id="@+id/tvCollectTypeTotal"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btnCollectSign"
+        app:layout_constraintEnd_toStartOf="@id/tvCollectValue"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="AFORO POR VOLUMEN:" />
+
+    <TextView
+        android:id="@+id/tvCollectValue"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btnCollectSign"
+        app:layout_constraintEnd_toStartOf="@id/tvCollectUnits"
+        app:layout_constraintStart_toEndOf="@id/tvCollectTypeTotal"
+        tools:text="229,595" />
+
+    <TextView
+        android:id="@+id/tvCollectUnits"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btnCollectSign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvCollectValue"
+        tools:text="Tn" />
+
+    <ImageButton
+        android:id="@+id/btnCollectPhoto"
+        style="@style/Theme.AseoAforos.btn.photo"
+        android:contentDescription="@string/photoDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCollectSign"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCollectSign"
+        style="@style/Theme.AseoAforos.btn.aforo"
+        android:text="@string/sign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCollectSave"
+        app:layout_constraintStart_toEndOf="@id/btnCollectPhoto" />
+
+    <Button
+        android:id="@+id/btnCollectSave"
+        style="@style/Theme.AseoAforos.btn.aforo"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCollectCancel"
+        app:layout_constraintStart_toEndOf="@id/btnCollectSign" />
+
+    <Button
+        android:id="@+id/btnCollectCancel"
+        style="@style/Theme.AseoAforos.btn.aforo"
+        android:layout_marginEnd="25dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnCollectSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

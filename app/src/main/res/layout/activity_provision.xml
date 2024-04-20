@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ProvisionActivity">
+
+    <TextView
+        android:id="@+id/tvProvisionTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:text="@string/provision"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vProvisionHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProvisionTitle" />
+
+    <TextView
+        android:id="@+id/tvProvisionSubTitle"
+        style="@style/Theme.AseoAforos.tvLabelStyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/startTrip"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vProvisionHr" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clProvisionContainerDateTime"
+        style="@style/Theme.AseoAforos.cvContainer"
+        app:layout_constraintBottom_toTopOf="@id/clProvisionContainerKmStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProvisionSubTitle">
+
+        <TextView
+            style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+            android:text="@string/provisionStartTimeStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProvisionDateTimeStart"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="12 MARZO 2024 5:20PM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clProvisionContainerKmStart"
+        style="@style/Theme.AseoAforos.cvContainer"
+        app:layout_constraintBottom_toTopOf="@id/clProvisionContainerQuantityToll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clProvisionContainerDateTime">
+
+        <TextView
+            style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+            android:text="@string/provisionKmStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etProvisionKmStart"
+            style="@style/Theme.AseoAforos.etProvision"
+            android:layout_height="48dp"
+            android:autofillHints="phone"
+            android:hint="@string/hintKmStart"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clProvisionContainerQuantityToll"
+        style="@style/Theme.AseoAforos.cvContainer"
+        app:layout_constraintBottom_toTopOf="@id/rvProvisionTolls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clProvisionContainerKmStart">
+
+        <TextView
+            style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+            android:text="@string/quantityTolls"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/imgBtnProvisionRemoveToll"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="@string/removeDescription"
+                android:src="@drawable/vector_remove"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvProvisionQuantityToll"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvProvisionQuantityToll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dp"
+                android:text="@string/one"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imgBtnProvisionAddToll"
+                app:layout_constraintStart_toEndOf="@id/imgBtnProvisionRemoveToll"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imgBtnProvisionAddToll"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:contentDescription="@string/addDescription"
+                android:src="@drawable/vector_add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvProvisionQuantityToll"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProvisionTolls"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/shape_border"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@id/clProvisionContainerShow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clProvisionContainerQuantityToll" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clProvisionContainerShow"
+        style="@style/Theme.AseoAforos.cvContainer"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toTopOf="@id/btnProvisionAccept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvProvisionTolls">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProvisionContainerTrip"
+            style="@style/Theme.AseoAforos.cvContainer"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvProvisionTrip"
+                style="@style/Theme.AseoAforos.tvTitleStyle"
+                android:layout_marginTop="0dp"
+                android:text="@string/trip"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgVProvisionFirstDot"
+                style="@style/Theme.AseoAforos.imgDot"
+                android:contentDescription="@string/dotDescription"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imgVProvisionSecondDot"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvProvisionTrip" />
+
+            <ImageView
+                android:id="@+id/imgVProvisionSecondDot"
+                style="@style/Theme.AseoAforos.imgDot"
+                android:contentDescription="@string/dotDescription"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imgVProvisionThirdDot"
+                app:layout_constraintStart_toEndOf="@id/imgVProvisionFirstDot"
+                app:layout_constraintTop_toBottomOf="@id/tvProvisionTrip" />
+
+            <ImageView
+                android:id="@+id/imgVProvisionThirdDot"
+                style="@style/Theme.AseoAforos.imgDot"
+                android:contentDescription="@string/dotDescription"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imgVProvisionFourthDot"
+                app:layout_constraintStart_toEndOf="@id/imgVProvisionSecondDot"
+                app:layout_constraintTop_toBottomOf="@id/tvProvisionTrip" />
+
+            <ImageView
+                android:id="@+id/imgVProvisionFourthDot"
+                style="@style/Theme.AseoAforos.imgDot"
+                android:contentDescription="@string/dotDescription"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imgVProvisionTruck"
+                app:layout_constraintStart_toEndOf="@id/imgVProvisionThirdDot"
+                app:layout_constraintTop_toBottomOf="@id/tvProvisionTrip" />
+
+            <ImageView
+                android:id="@+id/imgVProvisionTruck"
+                style="@style/Theme.AseoAforos.imgDot"
+                android:contentDescription="@string/truck"
+                android:src="@drawable/vector_truck"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgVProvisionFourthDot"
+                app:layout_constraintTop_toBottomOf="@id/tvProvisionTrip" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProvisionContainerForm"
+            style="@style/Theme.AseoAforos.cvContainer"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clProvisionContainerDateTimePlace"
+                style="@style/Theme.AseoAforos.cvContainer"
+                android:layout_margin="0dp"
+                app:layout_constraintBottom_toTopOf="@id/clProvisionContainerType"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    android:text="@string/provisionDateTimePlace"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvProvisionDateTimeStartPlace"
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="12 MARZO 2024 6:50PM" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clProvisionContainerType"
+                style="@style/Theme.AseoAforos.cvContainer"
+                android:layout_margin="0dp"
+                app:layout_constraintBottom_toTopOf="@id/clProvisionContainerPlace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clProvisionContainerDateTimePlace">
+
+                <TextView
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    android:text="@string/provisionType"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/sProvisionType"
+                    style="@style/Theme.AseoAforos.spinProvision"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clProvisionContainerPlace"
+                style="@style/Theme.AseoAforos.cvContainer"
+                android:layout_margin="0dp"
+                app:layout_constraintBottom_toTopOf="@id/clProvisionContainerWeight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clProvisionContainerType">
+
+                <TextView
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    android:text="@string/provisionPlace"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/sProvisionPlace"
+                    style="@style/Theme.AseoAforos.spinProvision"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clProvisionContainerWeight"
+                style="@style/Theme.AseoAforos.cvContainer"
+                android:layout_margin="0dp"
+                app:layout_constraintBottom_toTopOf="@id/clProvisionContainerKmFinish"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clProvisionContainerPlace">
+
+                <TextView
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    android:text="@string/provisionTon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/etProvisionWeight"
+                    style="@style/Theme.AseoAforos.etProvision"
+                    android:autofillHints="123.5"
+                    android:hint="@string/hintProvisionTon"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clProvisionContainerKmFinish"
+                style="@style/Theme.AseoAforos.cvContainer"
+                android:layout_margin="0dp"
+                app:layout_constraintBottom_toTopOf="@id/imgBtnProvisionPhoto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clProvisionContainerWeight">
+
+                <TextView
+                    style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+                    android:text="@string/provisionKmFinish"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/etProvisionKmFinish"
+                    style="@style/Theme.AseoAforos.etProvision"
+                    android:autofillHints="phone"
+                    android:hint="@string/hintKmStart"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageButton
+                android:id="@+id/imgBtnProvisionPhoto"
+                style="@style/Theme.AseoAforos.btn.photo"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@string/photoDescription"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clProvisionContainerKmFinish" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnProvisionAccept"
+        style="@style/Theme.AseoAforos.btn.provision"
+        android:text="@string/accept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnProvisionCancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnProvisionCancel"
+        style="@style/Theme.AseoAforos.btn.provision"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgBtnProvisionIncident"
+        app:layout_constraintStart_toEndOf="@id/btnProvisionAccept" />
+
+    <ImageButton
+        android:id="@+id/imgBtnProvisionIncident"
+        style="@style/Theme.AseoAforos.btn.incident"
+        android:contentDescription="@string/incidentDescriptionImg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnProvisionCancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

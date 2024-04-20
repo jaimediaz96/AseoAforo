@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvDialogChangeCarTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:text="@string/newPlate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDialogChangeCarPlate"
+        style="@style/Theme.AseoAforos.etLoginStyle"
+        android:autofillHints="name"
+        android:hint="@string/hintPlate"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@id/btnDialogChangeCarAccept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogChangeCarTitle" />
+
+    <Button
+        android:id="@+id/btnDialogChangeCarAccept"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_marginTop="30dp"
+        android:text="@string/accept"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDialogChangeCarPlate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

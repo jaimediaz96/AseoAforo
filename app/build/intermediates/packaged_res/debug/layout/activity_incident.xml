@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activities.CarActivity">
+
+    <TextView
+        android:id="@+id/tvIncidentTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:text="@string/newIncident"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vIncidentHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvIncidentTitle" />
+
+    <TextView
+        android:id="@+id/tvIncidentType"
+        style="@style/Theme.AseoAforos.tvLabelStyle.tvIncident"
+        android:text="@string/incidentType"
+        app:layout_constraintBottom_toTopOf="@id/etIncidentType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vIncidentHr" />
+
+    <EditText
+        android:id="@+id/etIncidentType"
+        style="@style/Theme.AseoAforos.etRefuel"
+        android:autofillHints="Pinchada"
+        android:hint="@string/hintIncidentType"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@id/tvIncidentPlace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvIncidentType" />
+
+    <TextView
+        android:id="@+id/tvIncidentPlace"
+        style="@style/Theme.AseoAforos.tvLabelStyle.tvIncident"
+        android:text="@string/incidentPlace"
+        app:layout_constraintBottom_toTopOf="@id/etIncidentPlace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etIncidentType" />
+
+    <EditText
+        android:id="@+id/etIncidentPlace"
+        style="@style/Theme.AseoAforos.textArea"
+        android:autofillHints="name"
+        android:hint="@string/hintIncidentPlace"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@id/tvIncidentDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvIncidentPlace" />
+
+    <TextView
+        android:id="@+id/tvIncidentDescription"
+        style="@style/Theme.AseoAforos.tvLabelStyle.tvIncident"
+        android:text="@string/incidentDescription"
+        app:layout_constraintBottom_toTopOf="@id/etIncidentDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etIncidentPlace" />
+
+    <EditText
+        android:id="@+id/etIncidentDescription"
+        style="@style/Theme.AseoAforos.textArea"
+        android:autofillHints="Se pincho la llanta tracera izquierda"
+        android:hint="@string/hintIncidentDescription"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@id/clIncidentContainerAbandon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvIncidentDescription" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clIncidentContainerAbandon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintBottom_toTopOf="@id/imgBtnIncidentPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etIncidentDescription">
+
+        <TextView
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvIncident"
+            android:layout_marginStart="0dp"
+            android:text="@string/incidentAbandon"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cbIncidentAbandon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbIncidentAbandon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnIncidentSave"
+        style="@style/Theme.AseoAforos.btn.refuel"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgBtnIncidentPhoto"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBtnIncidentPhoto"
+        style="@style/Theme.AseoAforos.btn.photo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/photoDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnIncidentCancel"
+        app:layout_constraintStart_toEndOf="@id/btnIncidentSave" />
+
+    <Button
+        android:id="@+id/btnIncidentCancel"
+        style="@style/Theme.AseoAforos.btn.refuel"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgBtnIncidentPhoto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MicroRouteActivity">
+
+    <TextView
+        android:id="@+id/tvRouteTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:text="@string/routeTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vRouteHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRouteTitle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMicroRouteRouteName"
+        style="@style/Theme.AseoAforos.container.microRoute"
+        app:layout_constraintBottom_toTopOf="@id/clMicroRouteRouteDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vRouteHr">
+
+        <TextView
+            android:id="@+id/tvMicroRouteRouteNameLabel"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28.microLeft"
+            android:text="@string/route"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMicroRouteRouteName"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvMicroRouteRouteNameLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="RUTA AZUL" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMicroRouteRouteDescription"
+        style="@style/Theme.AseoAforos.container.microRoute"
+        app:layout_constraintBottom_toTopOf="@id/clMicroRouteName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clMicroRouteRouteName">
+
+        <TextView
+            android:id="@+id/vMicroRouteRouteDescriptionLabel"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28.microLeft"
+            android:text="@string/municipality"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMicroRouteRouteDescription"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vMicroRouteRouteDescriptionLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="FUNZA" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMicroRouteName"
+        style="@style/Theme.AseoAforos.container.microRoute"
+        app:layout_constraintBottom_toTopOf="@id/clMicroRouteDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clMicroRouteRouteDescription">
+
+        <TextView
+            android:id="@+id/vMicroRouteNameLabel"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28.microLeft"
+            android:text="@string/microRoute"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMicroRouteName"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vMicroRouteNameLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="12345" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMicroRouteDate"
+        style="@style/Theme.AseoAforos.container.microRoute"
+        app:layout_constraintBottom_toTopOf="@id/clMicroRouteFrequency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clMicroRouteName">
+
+        <TextView
+            android:id="@+id/vMicroRouteDateLabel"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28.microLeft"
+            android:text="@string/date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMicroRouteDate"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vMicroRouteDateLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="8 MARZO 2024" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMicroRouteFrequency"
+        style="@style/Theme.AseoAforos.container.microRoute"
+        app:layout_constraintBottom_toTopOf="@id/clMicroRouteClients"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clMicroRouteDate">
+
+        <TextView
+            android:id="@+id/vMicroRouteFrequencyLabel"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28.microLeft"
+            android:text="@string/frequency"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMicroRouteFrequency"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vMicroRouteFrequencyLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="VIERNES" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMicroRouteClients"
+        style="@style/Theme.AseoAforos.container.microRoute"
+        app:layout_constraintBottom_toTopOf="@id/clMicroRouteTruck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clMicroRouteFrequency">
+
+        <TextView
+            android:id="@+id/vMicroRouteClientsLabel"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28.microLeft"
+            android:text="@string/customers"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMicroRouteClients"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vMicroRouteClientsLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="150" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMicroRouteTruck"
+        style="@style/Theme.AseoAforos.container.microRoute"
+        app:layout_constraintBottom_toTopOf="@id/clMicroRouteDriver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clMicroRouteClients">
+
+        <TextView
+            android:id="@+id/vMicroRouteTruckLabel"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28.microLeft"
+            android:text="@string/plate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMicroRouteTruck"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vMicroRouteTruckLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="BBB987" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMicroRouteDriver"
+        style="@style/Theme.AseoAforos.container.microRoute"
+        app:layout_constraintBottom_toTopOf="@id/btnRouteAccept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clMicroRouteTruck">
+
+        <TextView
+            android:id="@+id/vMicroRouteDriverLabel"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28.microLeft"
+            android:text="@string/driver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMicroRouteDriver"
+            style="@style/Theme.AseoAforos.tvLabelStyle.size28"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vMicroRouteDriverLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="JUANITO PEREZ" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnRouteAccept"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_width="300dp"
+        android:text="@string/accept"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

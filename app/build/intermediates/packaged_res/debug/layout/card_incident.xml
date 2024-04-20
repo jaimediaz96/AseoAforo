@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/shape_border"
+    android:padding="12dp"
+    tools:context=".ui.activities.RefuelListActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCardIncidentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/clCardIncidentValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCardIncidentType"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:text="@string/typeIncident"
+            app:layout_constraintBottom_toTopOf="@id/tvCardIncidentPlace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCardIncidentPlace"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:text="@string/place"
+            app:layout_constraintBottom_toTopOf="@id/tvCardIncidentDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardIncidentType" />
+
+        <TextView
+            android:id="@+id/tvCardIncidentDate"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:text="@string/date"
+            app:layout_constraintBottom_toTopOf="@id/tvCardIncidentTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardIncidentPlace" />
+
+        <TextView
+            android:id="@+id/tvCardIncidentTime"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:layout_marginBottom="0dp"
+            android:text="@string/time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardIncidentDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCardIncidentValue"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgVCardIncident"
+        app:layout_constraintStart_toEndOf="@id/clCardIncidentLabel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCardIncidentTypeValue"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            app:layout_constraintBottom_toTopOf="@id/tvCardIncidentPlaceValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="PINCHADA" />
+
+        <TextView
+            android:id="@+id/tvCardIncidentPlaceValue"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            app:layout_constraintBottom_toTopOf="@id/tvCardIncidentDateValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardIncidentTypeValue"
+            tools:text="PUENTE" />
+
+        <TextView
+            android:id="@+id/tvCardIncidentDateValue"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            app:layout_constraintBottom_toTopOf="@id/tvCardIncidentTimeValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardIncidentPlaceValue"
+            tools:text="11 MARZO 2024" />
+
+        <TextView
+            android:id="@+id/tvCardIncidentTimeValue"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardIncidentDateValue"
+            tools:text="03:20 PM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imgVCardIncident"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/evidencePhoto"
+        android:src="@drawable/vector_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/clCardIncidentValue"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/shape_border" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

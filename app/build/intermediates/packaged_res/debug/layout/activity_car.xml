@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activities.CarActivity">
+
+    <TextView
+        android:id="@+id/tvCarTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:layout_marginTop="10dp"
+        android:text="@string/carTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCarCar"
+        style="@style/Theme.AseoAforos.tvLabelStyle.tvCar"
+        android:text="@string/plate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCarTitle" />
+
+    <TextView
+        android:id="@+id/tvCarPlate"
+        style="@style/Theme.AseoAforos.tvLabelStyle.tvCar"
+        app:layout_constraintStart_toEndOf="@id/tvCarCar"
+        app:layout_constraintTop_toBottomOf="@id/tvCarTitle"
+        tools:text="SPM320" />
+
+    <TextView
+        android:id="@+id/tvCarKm"
+        style="@style/Theme.AseoAforos.tvLabelStyle"
+        android:layout_marginEnd="25dp"
+        android:paddingTop="13dp"
+        android:text="@string/kmStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/etCarKm"
+        app:layout_constraintTop_toBottomOf="@id/tvCarTitle" />
+
+    <EditText
+        android:id="@+id/etCarKm"
+        style="@style/Theme.AseoAforos.tvLabelStyle"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="1"
+        android:hint="@string/kmStart"
+        android:inputType="number"
+        android:labelFor="@id/tvCarKm"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCarTitle"
+        tools:text="12345678" />
+
+    <View
+        android:id="@+id/vCarHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCarKm" />
+
+    <TextView
+        android:id="@+id/tvCarCondition"
+        style="@style/Theme.AseoAforos.tvLabelStyle"
+        android:layout_marginTop="10dp"
+        android:text="@string/carCondition"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vCarHr" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llCarLabels"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toTopOf="@id/tvCarAddObservation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCarCondition">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llCarTireCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/llCarFuel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/tireCondition"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinCarTireCondition"
+                style="@style/Theme.AseoAforos.spinnerCarStyle"
+                android:background="@drawable/shape_border_arrow_drop_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llCarFuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/llCarBreakLights"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llCarTireCondition">
+
+            <TextView
+                android:id="@+id/tvCarLabelFuel"
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/fuelLevel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinCarFuelLevel"
+                style="@style/Theme.AseoAforos.spinnerCarStyle"
+                android:background="@drawable/shape_border_arrow_drop_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llCarBreakLights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/llCarHornCondition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llCarFuel">
+
+            <TextView
+                android:id="@+id/tvCarLabelBreakLights"
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/breakLights"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinCarBreakLights"
+                style="@style/Theme.AseoAforos.spinnerCarStyle"
+                android:background="@drawable/shape_border_arrow_drop_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llCarHornCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/llCarBrakeFluid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llCarBreakLights">
+
+            <TextView
+                android:id="@+id/tvCarLabelHorn"
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/hornCondition"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinCarHornCondition"
+                style="@style/Theme.AseoAforos.spinnerCarStyle"
+                android:background="@drawable/shape_border_arrow_drop_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llCarBrakeFluid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/llCarOilLevel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llCarHornCondition">
+
+            <TextView
+                android:id="@+id/tvCarLabelBrakeFluid"
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/brakeFluid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinCarBrakeFluid"
+                style="@style/Theme.AseoAforos.spinnerCarStyle"
+                android:background="@drawable/shape_border_arrow_drop_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llCarOilLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/llCarCarDocument"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llCarBrakeFluid">
+
+            <TextView
+                android:id="@+id/tvCarLabelOilLevel"
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/oilLevel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinCarOilLevel"
+                style="@style/Theme.AseoAforos.spinnerCarStyle"
+                android:background="@drawable/shape_border_arrow_drop_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llCarCarDocument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llCarOilLevel">
+
+            <TextView
+                android:id="@+id/tvCarLabelDocument"
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/carDocument"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/cbCarCarDocument"
+                style="@style/Theme.AseoAforos.spinnerCarStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvCarAddObservation"
+        style="@style/Theme.AseoAforos.tvCarLabelStyle"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/addObservation"
+        app:layout_constraintBottom_toTopOf="@+id/etCarAddObservation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etCarAddObservation"
+        style="@style/Theme.AseoAforos.textArea"
+        android:autofillHints="ok"
+        android:hint="@string/hintAddObservation"
+        app:layout_constraintBottom_toTopOf="@id/btnCarCrew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCarCrew"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:text="@string/addCrew"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCarChange"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCarChange"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:text="@string/changeCar"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCarCancel"
+        app:layout_constraintStart_toEndOf="@id/btnCarCrew" />
+
+    <Button
+        android:id="@+id/btnCarCancel"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:text="@string/cancel"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnCarChange" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

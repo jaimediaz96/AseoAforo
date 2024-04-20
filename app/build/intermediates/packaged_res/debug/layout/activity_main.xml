@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLoginNameApp"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLoginVersion"
+        style="@style/Theme.AseoAforos.tvLabelStyle"
+        android:text="@string/version"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLoginNameApp" />
+
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/alt_logo"
+        android:src="@mipmap/ic_logo_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLoginVersion" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llLoginCredentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btnLoginLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLoginLogo">
+
+        <EditText
+            android:id="@+id/etLoginUsername"
+            style="@style/Theme.AseoAforos.etLoginStyle"
+            android:autofillHints="username"
+            android:drawableStart="@drawable/vector_person"
+            android:hint="@string/hint_user"
+            android:inputType="textAutoComplete"
+            android:textColorHint="@color/light_gray"
+            app:layout_constraintBottom_toTopOf="@id/etLoginPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etLoginPassword"
+            style="@style/Theme.AseoAforos.etLoginStyle"
+            android:autofillHints="password"
+            android:drawableStart="@drawable/vector_lock"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/light_gray"
+            app:layout_constraintBottom_toTopOf="@id/tvLoginForgetPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etLoginUsername" />
+
+        <TextView
+            android:id="@+id/tvLoginForgetPassword"
+            style="@style/Theme.AseoAforos.tvLabelStyle"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="@string/forgotPassword"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tvLoginError"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etLoginPassword" />
+
+        <TextView
+            android:id="@+id/tvLoginError"
+            style="@style/Theme.AseoAforos.tvLabelStyle"
+            android:text="@string/errorCredential"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLoginForgetPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnLoginLogin"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_width="350dp"
+        android:text="@string/button_login"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

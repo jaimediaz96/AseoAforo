@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.AforoActivity">
+
+    <TextView
+        android:id="@+id/tvAforoTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:text="@string/aforo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vAforoHrTitle"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAforoTitle" />
+
+    <TextView
+        android:id="@+id/tvAforoType"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        android:text="@string/type"
+        app:layout_constraintBottom_toTopOf="@id/tvAforoClientName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vAforoHrTitle" />
+
+    <TextView
+        android:id="@+id/tvAforoClientName"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toTopOf="@id/tvAforoClientAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAforoType"
+        tools:text="TECNOLOGÍA INDUSTRIAL AVANZADA S.A." />
+
+    <TextView
+        android:id="@+id/tvAforoClientAddress"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toTopOf="@id/vAforoHr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAforoClientName"
+        tools:text="AVE, SEC IND MEDELLÍN, BOD 12, PARQUE DE NEGOCIOS LA ESPERANZA" />
+
+    <TextView
+        android:id="@+id/tvAforoAforo"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvAforoType"
+        app:layout_constraintTop_toBottomOf="@id/vAforoHrTitle"
+        tools:text="AFORO POR VOLUMEN" />
+
+    <View
+        android:id="@+id/vAforoHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAforoClientAddress" />
+
+    <TextView
+        android:id="@+id/tvAforoLabelCheck"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        android:text="@string/labelCheck"
+        app:layout_constraintBottom_toTopOf="@id/tvAforoNoCollect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vAforoHr" />
+
+    <CheckBox
+        android:id="@+id/cbAforoCheck"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        app:layout_constraintBottom_toTopOf="@id/spinAforoCodeNoCollect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvAforoLabelCheck"
+        app:layout_constraintTop_toBottomOf="@id/vAforoHr" />
+
+    <TextView
+        android:id="@+id/tvAforoNoCollect"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginStart="25dp"
+        android:text="@string/noCollect"
+        app:layout_constraintBottom_toTopOf="@id/vAforoHrList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAforoLabelCheck" />
+
+    <Spinner
+        android:id="@+id/spinAforoCodeNoCollect"
+        style="@style/Theme.AseoAforos.spinAforo"
+        app:layout_constraintBottom_toTopOf="@id/vAforoHrList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvAforoNoCollect"
+        app:layout_constraintTop_toBottomOf="@id/cbAforoCheck" />
+
+    <View
+        android:id="@+id/vAforoHrList"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinAforoCodeNoCollect" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcAforoList"
+        style="@style/Theme.AseoAforos.client"
+        android:paddingTop="35dp"
+        app:layout_constraintBottom_toTopOf="@id/tvAforoTypeTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vAforoHrList" />
+
+    <TextView
+        android:id="@+id/tvAforoTypeTotal"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAforoSign"
+        app:layout_constraintEnd_toStartOf="@id/tvAforoValue"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="AFORO POR VOLUMEN:" />
+
+    <TextView
+        android:id="@+id/tvAforoValue"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAforoSign"
+        app:layout_constraintEnd_toStartOf="@id/tvAforoUnits"
+        app:layout_constraintStart_toEndOf="@id/tvAforoTypeTotal"
+        tools:text="229,595" />
+
+    <TextView
+        android:id="@+id/tvAforoUnits"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size18"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAforoSign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvAforoValue"
+        tools:text="Tn" />
+
+    <ImageButton
+        android:id="@+id/btnAforoPhoto"
+        style="@style/Theme.AseoAforos.btn.photo"
+        android:contentDescription="@string/photoDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnAforoSign"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAforoSign"
+        style="@style/Theme.AseoAforos.btn.aforo"
+        android:text="@string/sign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnAforoSave"
+        app:layout_constraintStart_toEndOf="@id/btnAforoPhoto" />
+
+    <Button
+        android:id="@+id/btnAforoSave"
+        style="@style/Theme.AseoAforos.btn.aforo"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnAforoCancel"
+        app:layout_constraintStart_toEndOf="@id/btnAforoSign" />
+
+    <Button
+        android:id="@+id/btnAforoCancel"
+        style="@style/Theme.AseoAforos.btn.aforo"
+        android:layout_marginEnd="25dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnAforoSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

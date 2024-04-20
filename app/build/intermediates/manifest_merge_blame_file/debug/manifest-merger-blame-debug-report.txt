@@ -1,0 +1,319 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.aseoaforos"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:5:5-65
+11-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:5:22-62
+12
+13    <uses-feature
+13-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:7:5-9:35
+14        android:name="android.hardware.camera"
+14-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:8:9-47
+15        android:required="true" />
+15-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:9:9-32
+16
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:11:5-81
+17-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:11:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:12:5-80
+18-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:12:22-77
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:13:5-79
+19-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:13:22-76
+20    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+20-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:14:5-81
+20-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:14:22-78
+21
+22    <queries>
+22-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:16:5-18:15
+23        <provider android:authorities="com.example.aseoaforos.provider" />
+23-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:17:9-75
+23-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:17:19-72
+24    </queries>
+25
+26    <supports-screens
+26-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:20:5-25:41
+27        android:largeScreens="true"
+27-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:21:9-36
+28        android:normalScreens="false"
+28-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:22:9-38
+29        android:requiresSmallestWidthDp="700"
+29-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:23:9-46
+30        android:smallScreens="false"
+30-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:24:9-37
+31        android:xlargeScreens="false" />
+31-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:25:9-38
+32
+33    <permission
+33-->[androidx.core:core:1.13.0-rc01] C:\Users\jedt1\.gradle\caches\transforms-3\6504bb1a09398bfc127bcff1a91b5af0\transformed\core-1.13.0-rc01\AndroidManifest.xml:22:5-24:47
+34        android:name="com.example.aseoaforos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+34-->[androidx.core:core:1.13.0-rc01] C:\Users\jedt1\.gradle\caches\transforms-3\6504bb1a09398bfc127bcff1a91b5af0\transformed\core-1.13.0-rc01\AndroidManifest.xml:23:9-81
+35        android:protectionLevel="signature" />
+35-->[androidx.core:core:1.13.0-rc01] C:\Users\jedt1\.gradle\caches\transforms-3\6504bb1a09398bfc127bcff1a91b5af0\transformed\core-1.13.0-rc01\AndroidManifest.xml:24:9-44
+36
+37    <uses-permission android:name="com.example.aseoaforos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+37-->[androidx.core:core:1.13.0-rc01] C:\Users\jedt1\.gradle\caches\transforms-3\6504bb1a09398bfc127bcff1a91b5af0\transformed\core-1.13.0-rc01\AndroidManifest.xml:26:5-97
+37-->[androidx.core:core:1.13.0-rc01] C:\Users\jedt1\.gradle\caches\transforms-3\6504bb1a09398bfc127bcff1a91b5af0\transformed\core-1.13.0-rc01\AndroidManifest.xml:26:22-94
+38
+39    <application
+39-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:27:5-119:19
+40        android:allowBackup="true"
+40-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:28:9-35
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.13.0-rc01] C:\Users\jedt1\.gradle\caches\transforms-3\6504bb1a09398bfc127bcff1a91b5af0\transformed\core-1.13.0-rc01\AndroidManifest.xml:28:18-86
+42        android:dataExtractionRules="@xml/data_extraction_rules"
+42-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:29:9-65
+43        android:debuggable="true"
+44        android:extractNativeLibs="false"
+45        android:fullBackupContent="@xml/backup_rules"
+45-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:30:9-54
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:31:9-43
+47        android:label="@string/app_name"
+47-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:32:9-41
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:33:9-54
+49        android:screenOrientation="portrait"
+49-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:34:9-45
+50        android:supportsRtl="true"
+50-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:35:9-35
+51        android:testOnly="true"
+52        android:theme="@style/Base.Theme.AseoAforos" >
+52-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:36:9-53
+53        <activity
+53-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:38:9-40:40
+54            android:name="com.example.aseoaforos.ui.activities.ProvisionListActivity"
+54-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:39:13-64
+55            android:exported="false" />
+55-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:40:13-37
+56        <activity
+56-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:41:9-44:55
+57            android:name="com.example.aseoaforos.ui.activities.SignActivity"
+57-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:42:13-55
+58            android:exported="false"
+58-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:43:13-37
+59            android:windowSoftInputMode="adjustPan" />
+59-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:44:13-52
+60        <activity
+60-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:45:9-47:40
+61            android:name="com.example.aseoaforos.ui.activities.IncidentListActivity"
+61-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:46:13-63
+62            android:exported="false" />
+62-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:47:13-37
+63        <activity
+63-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:48:9-50:40
+64            android:name="com.example.aseoaforos.ui.activities.RefuelListActivity"
+64-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:49:13-61
+65            android:exported="false" />
+65-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:50:13-37
+66        <activity
+66-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:51:9-53:40
+67            android:name="com.example.aseoaforos.ui.activities.PhotoActivity"
+67-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:52:13-56
+68            android:exported="false" />
+68-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:53:13-37
+69        <activity
+69-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:54:9-57:55
+70            android:name="com.example.aseoaforos.ui.activities.FinishRouteActivity"
+70-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:55:13-62
+71            android:exported="false"
+71-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:56:13-37
+72            android:windowSoftInputMode="adjustPan" />
+72-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:57:13-52
+73        <activity
+73-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:58:9-60:40
+74            android:name="com.example.aseoaforos.ui.activities.ReturnHomeActivity"
+74-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:59:13-61
+75            android:exported="false" />
+75-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:60:13-37
+76        <activity
+76-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:61:9-64:55
+77            android:name="com.example.aseoaforos.ui.activities.ProvisionActivity"
+77-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:62:13-60
+78            android:exported="false"
+78-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:63:13-37
+79            android:windowSoftInputMode="adjustPan" />
+79-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:64:13-52
+80        <activity
+80-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:65:9-68:55
+81            android:name="com.example.aseoaforos.ui.activities.IncidentActivity"
+81-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:66:13-59
+82            android:exported="false"
+82-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:67:13-37
+83            android:windowSoftInputMode="adjustPan" />
+83-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:68:13-52
+84        <activity
+84-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:69:9-72:55
+85            android:name="com.example.aseoaforos.ui.activities.RefuelActivity"
+85-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:70:13-57
+86            android:exported="false"
+86-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:71:13-37
+87            android:windowSoftInputMode="adjustPan" />
+87-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:72:13-52
+88        <activity
+88-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:73:9-76:55
+89            android:name="com.example.aseoaforos.ui.activities.NewClientActivity"
+89-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:74:13-60
+90            android:exported="false"
+90-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:75:13-37
+91            android:windowSoftInputMode="adjustPan" />
+91-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:76:13-52
+92        <activity
+92-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:77:9-80:55
+93            android:name="com.example.aseoaforos.ui.activities.SelectClientActivity"
+93-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:78:13-63
+94            android:exported="false"
+94-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:79:13-37
+95            android:windowSoftInputMode="adjustPan" />
+95-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:80:13-52
+96        <activity
+96-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:81:9-84:55
+97            android:name="com.example.aseoaforos.ui.activities.AforoActivity"
+97-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:82:13-56
+98            android:exported="false"
+98-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:83:13-37
+99            android:windowSoftInputMode="adjustPan" />
+99-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:84:13-52
+100        <activity
+100-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:85:9-88:55
+101            android:name="com.example.aseoaforos.ui.activities.ClientActivity"
+101-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:86:13-57
+102            android:exported="false"
+102-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:87:13-37
+103            android:windowSoftInputMode="adjustPan" />
+103-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:88:13-52
+104        <activity
+104-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:89:9-91:40
+105            android:name="com.example.aseoaforos.ui.activities.CrewActivity"
+105-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:90:13-55
+106            android:exported="false" />
+106-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:91:13-37
+107        <activity
+107-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:92:9-95:55
+108            android:name="com.example.aseoaforos.ui.activities.CarActivity"
+108-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:93:13-54
+109            android:exported="false"
+109-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:94:13-37
+110            android:windowSoftInputMode="adjustPan" />
+110-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:95:13-52
+111        <activity
+111-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:96:9-98:40
+112            android:name="com.example.aseoaforos.ui.activities.MicroRouteActivity"
+112-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:97:13-61
+113            android:exported="false" />
+113-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:98:13-37
+114        <activity
+114-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:99:9-108:20
+115            android:name="com.example.aseoaforos.MainActivity"
+115-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:100:13-41
+116            android:exported="true"
+116-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:101:13-36
+117            android:windowSoftInputMode="adjustPan" >
+117-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:102:13-52
+118            <intent-filter>
+118-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:103:13-107:29
+119                <action android:name="android.intent.action.MAIN" />
+119-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:104:17-69
+119-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:104:25-66
+120
+121                <category android:name="android.intent.category.LAUNCHER" />
+121-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:106:17-77
+121-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:106:27-74
+122            </intent-filter>
+123        </activity>
+124
+125        <provider
+125-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:110:9-118:20
+126            android:name="androidx.core.content.FileProvider"
+126-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:111:13-62
+127            android:authorities="com.example.aseoaforos.provider"
+127-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:112:13-66
+128            android:exported="false"
+128-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:113:13-37
+129            android:grantUriPermissions="true" >
+129-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:114:13-47
+130            <meta-data
+130-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:115:13-117:54
+131                android:name="android.support.FILE_PROVIDER_PATHS"
+131-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:116:17-67
+132                android:resource="@xml/file_paths" />
+132-->C:\Users\jedt1\AndroidStudioProjects\AseoAforos\app\src\main\AndroidManifest.xml:117:17-51
+133        </provider>
+134        <provider
+134-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jedt1\.gradle\caches\transforms-3\13a26fdd42c5f14469321db08c802739\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+135            android:name="androidx.startup.InitializationProvider"
+135-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jedt1\.gradle\caches\transforms-3\13a26fdd42c5f14469321db08c802739\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+136            android:authorities="com.example.aseoaforos.androidx-startup"
+136-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jedt1\.gradle\caches\transforms-3\13a26fdd42c5f14469321db08c802739\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+137            android:exported="false" >
+137-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jedt1\.gradle\caches\transforms-3\13a26fdd42c5f14469321db08c802739\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+138            <meta-data
+138-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jedt1\.gradle\caches\transforms-3\13a26fdd42c5f14469321db08c802739\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+139                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+139-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jedt1\.gradle\caches\transforms-3\13a26fdd42c5f14469321db08c802739\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+140                android:value="androidx.startup" />
+140-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jedt1\.gradle\caches\transforms-3\13a26fdd42c5f14469321db08c802739\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+141            <meta-data
+141-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jedt1\.gradle\caches\transforms-3\58c90eba2b3ab3cf8195d7738d94fa5f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+142                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+142-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jedt1\.gradle\caches\transforms-3\58c90eba2b3ab3cf8195d7738d94fa5f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+143                android:value="androidx.startup" />
+143-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jedt1\.gradle\caches\transforms-3\58c90eba2b3ab3cf8195d7738d94fa5f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+144            <meta-data
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+145                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+146                android:value="androidx.startup" />
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+147        </provider>
+148
+149        <receiver
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+150            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+151            android:directBootAware="false"
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+152            android:enabled="true"
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+153            android:exported="true"
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+154            android:permission="android.permission.DUMP" >
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+156                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+157            </intent-filter>
+158            <intent-filter>
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+159                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+160            </intent-filter>
+161            <intent-filter>
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+162                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+163            </intent-filter>
+164            <intent-filter>
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+165                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jedt1\.gradle\caches\transforms-3\0cca80cd3aab7faec6ffb39553c9f0c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+166            </intent-filter>
+167        </receiver>
+168    </application>
+169
+170</manifest>

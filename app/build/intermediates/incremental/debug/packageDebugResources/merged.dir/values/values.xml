@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="percent">
+        <item>100%</item>
+        <item>75%</item>
+        <item>50%</item>
+        <item>25%</item>
+    </string-array>
+    <string-array name="spinBrakeFluid">
+        <item>COMPLETO</item>
+        <item>ALTO</item>
+        <item>MEDIO</item>
+        <item>BAJO</item>
+        <item>MÍNIMO</item>
+    </string-array>
+    <string-array name="spinBreakLights">
+        <item>EXCELENTE</item>
+        <item>ACEPTABLE</item>
+        <item>REGULAR</item>
+        <item>PARPADEANTES</item>
+        <item>DAÑADAS</item>
+    </string-array>
+    <string-array name="spinFuelLevel">
+        <item>LLENO</item>
+        <item>CASI LLENO</item>
+        <item>MEDIO</item>
+        <item>CASI VACÍO</item>
+        <item>VACÍO</item>
+    </string-array>
+    <string-array name="spinHornCondition">
+        <item>BUENO</item>
+        <item>REGULAR</item>
+        <item>MALO</item>
+    </string-array>
+    <string-array name="spinOilLevel">
+        <item>COMPLETO</item>
+        <item>SUFICIENTE</item>
+        <item>INSUFICIENTE</item>
+    </string-array>
+    <string-array name="spinTireCondition">
+        <item>EXCELENTE</item>
+        <item>ACEPTABLE</item>
+        <item>DESGASTADO</item>
+        <item>NECESITA ATENCIÓN</item>
+        <item>DEFICIENTE</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="blue">#005097</color>
+    <color name="dark_gray">#424242</color>
+    <color name="dark_green">#33691E</color>
+    <color name="dark_purple">#6E19BD</color>
+    <color name="light_gray">#949480 </color>
+    <color name="light_green">#9CCC65</color>
+    <color name="light_purple">#A45AE8</color>
+    <color name="red">#FF0000</color>
+    <color name="warning_yellow">#FDD835</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="Username">NOMBRE DEL USUARIO:</string>
+    <string name="accept">ACEPTAR</string>
+    <string name="addCrew">INGRESAR TRIPULANTES</string>
+    <string name="addDescription">Aumentar en uno</string>
+    <string name="addDocument">ADJUNTA ARCHIVO (RUT):</string>
+    <string name="addEmail">INGRESE SU CORREO:</string>
+    <string name="addObservation">OBSERVACIONES ADICIONALES:</string>
+    <string name="addRecipient">AGREGAR RECIPIENTE</string>
+    <string name="address">DIRECCIÓN:</string>
+    <string name="aforo">AFORO</string>
+    <string name="aforoBy">AFORO POR</string>
+    <string name="alt_logo">Logo de la empresa</string>
+    <string name="app_name">ARG-GGP</string>
+    <string name="brakeFluid">NIVEL DEL LÍQUIDO DE LOS FRENOS:</string>
+    <string name="breakLights">SISTEMA DE LUCES:</string>
+    <string name="button_login">INICIAR SESIÓN</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="capacity">CAPACIDAD:</string>
+    <string name="capacityJob">CAPACIDAD DE TRABAJOS</string>
+    <string name="capacityRecipient">CAPACIDAD DEL RECIPIENTE:</string>
+    <string name="captionSign">ESCRIBA SU FIRMA SOBRE LA LÍNEA</string>
+    <string name="carCondition">ESTADO DEL VEHÍCULO</string>
+    <string name="carDocument">DOCUMENTACIÓN DEL VEHICULO:</string>
+    <string name="carTitle">INICIAR RECORRIDO</string>
+    <string name="changeCar">CAMBIAR VEHÍCULO</string>
+    <string name="changeSign">CAMBIAR FIRMA</string>
+    <string name="checkImgDescription">IMAGEN DE COMPLETADO O NO</string>
+    <string name="clientSign">FIRMA DEL CLIENTE</string>
+    <string name="clock">TIEMPO:</string>
+    <string name="collected">RECOLECTADOS DE</string>
+    <string name="companyName">NOMBRE DE LA EMPRESA:</string>
+    <string name="contactName">NOMBRE DEL CONTACTO:</string>
+    <string name="contactPhone">TELÉFONO DEL CONTACTO:</string>
+    <string name="cost">VALOR:</string>
+    <string name="crew">TRIPULANTE:</string>
+    <string name="crewList">LISTA DE TRIPULANTES</string>
+    <string name="customers">CLIENTES:</string>
+    <string name="date">FECHA:</string>
+    <string name="dateFinish">FECHA DE FIN:</string>
+    <string name="dateStart">FECHA DE INICIO:</string>
+    <string name="delete">ELIMINAR</string>
+    <string name="deleteDescription">BOTÓN ELIMINAR</string>
+    <string name="descriptionAbandon">Describa el por que finaliza el viaje, aunque tenga clientes sin visitar</string>
+    <string name="descriptionWhyAbandon">DESCRIBA PORQUE FINALIZA EL VIAJE:</string>
+    <string name="detailAforo">DETALLES DEL AFORO</string>
+    <string name="dispose">DISPOSICIÓN</string>
+    <string name="dotDescription">Imagen de un punto</string>
+    <string name="driver">CONDUCTOR:</string>
+    <string name="editIncident">EDITAR INCIDENCIA</string>
+    <string name="editRefuel">EDITAR REPOSTAJE</string>
+    <string name="email">CORREO ELECTRÓNICO:</string>
+    <string name="errorCollectNoCollect">Por favor marque la casilla de “SE REALIZÓ LA RECOLECCIÓN” si se recolecto y deje la opción “Recolección sin inconveniente“ de “CAUSAL DE LA NO RECOLECCIÓN”, en caso contrario no marque la opción de “SE REALIZÓ LA RECOLECCIÓN”</string>
+    <string name="errorCredential">USUARIO O CONTRASEÑA INCORRECTOS</string>
+    <string name="errorEmail">Por favor ingrese una dirección de correo electrónico correcta</string>
+    <string name="errorEmailDB">Lo sentimos, pero no pudimos encontrar tu correo electrónico en nuestra base de datos. Por favor, asegúrate de que ingresaste la dirección de correo electrónico correcta. Si aún así no puedes recuperar tu contraseña, ponte en contacto con nuestro equipo de soporte para obtener ayuda adicional.</string>
+    <string name="errorNoField">Por favor complete el campo </string>
+    <string name="errorNoPhoto">Por favor tome al menos una foto</string>
+    <string name="errorNumber">El siguiente campo debe de ser mayor a cero</string>
+    <string name="errorPermission">Por favor acepte los permisos de cámara y almacenamiento</string>
+    <string name="errorPermissionLocation">Por favor acepte los permisos de ubicación</string>
+    <string name="errorPlate">El formato de la placa es inválido. Debe ser 3 letras y 3 números.</string>
+    <string name="errorPlateDB">Lo sentimos, pero no pudimos encontrar la placa en nuestra base de datos. Por favor, asegúrate de que ingresaste la placa del camión correcta. </string>
+    <string name="errorQuantity">Poner una cantidad</string>
+    <string name="errorRecipientEmpty">Por favor agregue al menos un recipiente</string>
+    <string name="especialAforo">SERVICIO ESPECIAL</string>
+    <string name="especialTitle">NUEVO TRABAJO</string>
+    <string name="evidencePhoto">FOTOS DE EVIDENCIA</string>
+    <string name="finish">FINALIZAR</string>
+    <string name="finishIncident">FINALIZAR INCIDENCIA</string>
+    <string name="finishObservation">OBSERVACIONES FINALES:</string>
+    <string name="finishRefuel">FINALIZAR REPOSTAJE</string>
+    <string name="finishRoute">FINALIZAR RUTA</string>
+    <string name="finishRouteKm">KILOMETRAJE FINAL:</string>
+    <string name="firstToll">5364</string>
+    <string name="forgotPassword">¿Has olvidado tu contraseña?</string>
+    <string name="frequency">FRECUENCIA:</string>
+    <string name="fuelLevel">NIVEL COMBUSTIBLE:</string>
+    <string name="gallons">GALONES</string>
+    <string name="hintAddEmail">Ingrese su correo electrónico</string>
+    <string name="hintAddObservation">Agregue aqui sus observaciones adicionales</string>
+    <string name="hintAddress">Dirección de la empresa</string>
+    <string name="hintCompanyName">Nombre de la empresa</string>
+    <string name="hintContactName">Nombre del contacto</string>
+    <string name="hintContactPhone">Número de teléfono del contacto</string>
+    <string name="hintCost">Valor en pesos $</string>
+    <string name="hintEmail">Correo electrónico empresa</string>
+    <string name="hintIncidentDescription">Describa lo ocurrido con sus propias palabras</string>
+    <string name="hintIncidentPlace">Lugar donde ocurrió la incidencia</string>
+    <string name="hintIncidentType">Tipo de incidencia</string>
+    <string name="hintKmStart">12345</string>
+    <string name="hintNit">NIT</string>
+    <string name="hintPhone">Número de teléfono la empresa</string>
+    <string name="hintPlace">Lugar del repostaje</string>
+    <string name="hintPlate">Placa</string>
+    <string name="hintProvisionTon">123.5</string>
+    <string name="hintRefuelQuantity">Cantidad de galones</string>
+    <string name="hintToll">Numero del peaje</string>
+    <string name="hintUsername">Escriba su nombre aqui</string>
+    <string name="hint_password">CONTRASEÑA</string>
+    <string name="hint_user">USUARIO</string>
+    <string name="hornCondition">ESTADO BOCINA:</string>
+    <string name="id">ID:</string>
+    <string name="incidence">INCIDENCIA</string>
+    <string name="incidentAbandon">¿ESTA INCIDENCIA AMERITA EL ABANDONO DE LA RUTA?</string>
+    <string name="incidentDescription">DESCRIPCION DE LA INCIDENCIA:</string>
+    <string name="incidentDescriptionImg">Ingresar un nuevo incidente</string>
+    <string name="incidentList">LISTA DE INCIDENCIAS</string>
+    <string name="incidentPlace">LUGAR DE LA INCIDENCIA:</string>
+    <string name="incidentType">TIPO DE INCIDENCIA:</string>
+    <string name="kmStart">KM INICIAL:</string>
+    <string name="labelCheck">SE REALIZÓ LA RECOLECCIÓN:</string>
+    <string name="meter">M^3</string>
+    <string name="microRoute">MICRO-RUTA:</string>
+    <string name="missingClients">AÚN FALTAN CLIENTES POR ATENDER</string>
+    <string name="municipality">MUNICIPIO:</string>
+    <string name="newAforo">NUEVO AFORO</string>
+    <string name="newClient">NUEVO CLIENTE</string>
+    <string name="newIncident">NUEVA INCIDENCIA</string>
+    <string name="newPlate">INGRESE LA NUEVA PLACA</string>
+    <string name="newRecipient">NUEVO RECIPIENTE</string>
+    <string name="newRefuel">NUEVO REPOSTAJE</string>
+    <string name="nit">NIT:</string>
+    <string name="no">NO</string>
+    <string name="noCollect">CAUSAL DE LA NO RECOLENCCiÓN:</string>
+    <string name="oilLevel">NIVEL ACEITE:</string>
+    <string name="one">1</string>
+    <string name="pauseAforo">PAUSAR RUTA</string>
+    <string name="phone">TELÉFONO:</string>
+    <string name="photoDescription">Toma una Foto</string>
+    <string name="photoTake">FOTO TOMADA</string>
+    <string name="place">LUGAR:</string>
+    <string name="plate">VEHÍCULO:</string>
+    <string name="progress">AVANCE:</string>
+    <string name="provision">DISPOSICIÓN</string>
+    <string name="provisionDateTimePlace">FECHA Y HORA ENTRADA SITIO:</string>
+    <string name="provisionFinish">FINALIZAR</string>
+    <string name="provisionKmFinish">KILOMETRAJE FINAL:</string>
+    <string name="provisionKmStart">KILOMETRAJE INICIAL:</string>
+    <string name="provisionPlace">SITIO DE DISPOSICIÓN:</string>
+    <string name="provisionStartTimeStart">FECHA Y HORA INICIO VIAJE:</string>
+    <string name="provisionTon">PESAJE TONELADAS:</string>
+    <string name="provisionType">TIPO DE RESIDUO:</string>
+    <string name="quantity">CANTIDAD:</string>
+    <string name="quantityJob">INDIQUE LA CANTIDAD DE TRABAJOS</string>
+    <string name="quantityLabel">INGRESE EL PESO EN TONELADAS</string>
+    <string name="quantityTolls">CANTIDAD DE PEAJES:</string>
+    <string name="questionMissingClients">¿ESTÁ SEGURO QUE DESEA FINALIZAR LA RUTA?</string>
+    <string name="questionProvision">¿DESEA INICIAR EL VIAJE HACIA EL RELLENO SANITARIO?</string>
+    <string name="questionReturn">¿DESEA INICIAR EL VIAJE DE REGRESO A BASE?</string>
+    <string name="recipientQuantityLabel">INGRESE LA CANTIDAD DE RECIPIENTES:</string>
+    <string name="recipientSelectLabel">SELECCIONE EL RECIPIENTE:</string>
+    <string name="recipientTotalLabelUnit">TOTAL DE </string>
+    <string name="recipientTotalLabelUnitMeter">METROS CÚBICOS:</string>
+    <string name="recipientTotalLabelUnitTon">TONELADAS:</string>
+    <string name="refuelListTitle">LISTA DE REPOSTAJES</string>
+    <string name="refuelQuantity">CANTIDAD DE GALONES:</string>
+    <string name="refueling">REPOSTAJE</string>
+    <string name="removeCrew">Botón para eliminar de la lista</string>
+    <string name="removeDescription">Disminuir en uno</string>
+    <string name="returnBase">VIAJE A BASE</string>
+    <string name="returnHome">VIAJE DE REGRESO A BASE</string>
+    <string name="route">RUTA:</string>
+    <string name="routeTitle">RECORRIDO ASIGNADO</string>
+    <string name="save">GUARDAR</string>
+    <string name="searchClient">BUSCAR CLIENTE</string>
+    <string name="selectClient">SELECCIONE UN CLIENT</string>
+    <string name="selectJob">SELECCIONE EL TRABAJO</string>
+    <string name="selectTypeAforo">SELECCIONE EL TIPO DE AFORO</string>
+    <string name="sign">FIRMA</string>
+    <string name="signTitle">FIRMA DEL USUARIO</string>
+    <string name="startRoute">INICIAR</string>
+    <string name="startTrip">INICIANDO VIAJE</string>
+    <string name="time">HORA:</string>
+    <string name="tireCondition">ESTADO DE LLANTAS Y SU PRESIÓN:</string>
+    <string name="titlePauseRoute">¿POR QUE MOTIVO DESEA PAUSAR EL RECORRIDO?</string>
+    <string name="tollNumber">NUMERO DE PEAJE:</string>
+    <string name="ton">Tn</string>
+    <string name="trip">POR FAVOR PRESIONE ACEPTAR CUANDO ESTE EN EL SITIO</string>
+    <string name="tripBase">POR FAVOR PRESIONE ACEPTAR CUANDO ESTE EN LA BASE</string>
+    <string name="truck">TRUCK</string>
+    <string name="type">TIPO DE MEDICIÓN:</string>
+    <string name="typeIncident">TIPO DE INCIDENCIA:</string>
+    <string name="version">Version 1.0</string>
+    <string name="volumeAforo">AFORO POR VOLUMEN</string>
+    <string name="volumeTitle">BASCULA</string>
+    <string name="weightAforo">AFORO POR PESO</string>
+    <string name="wordContinue">CONTINUAR</string>
+    <string name="wordNew">NUEVO</string>
+    <string name="yes">SI</string>
+    <style name="Base.Theme.AseoAforos" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.AseoAforos.btn" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.Incident">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.activityPhoto">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.aforo">
+        <item name="android:layout_width">115dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.incident">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:backgroundTint">@color/warning_yellow</item>
+        <item name="android:background">@drawable/shape_border_incident</item>
+        <item name="android:src">@drawable/vector_incident</item>
+        <item name="android:contentDescription">@string/incidentDescriptionImg</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.incidentList">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.missingClient">
+        <item name="android:layout_width">125dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.newAforo">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.newClient">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.pauseAforo">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.photo">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:background">@drawable/shape_border_photo</item>
+        <item name="android:src">@drawable/vector_photo</item>
+        <item name="android:contentDescription">@string/photoDescription</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.provision">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.recipient">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.refuel">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.refuelList">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.selectClient">
+        <item name="android:layout_height">65dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+    <style name="Theme.AseoAforos.btn.sign">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="Theme.AseoAforos.btnDelete" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/vector_delete</item>
+        <item name="android:contentDescription">@string/removeCrew</item>
+    </style>
+    <style name="Theme.AseoAforos.client" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/shape_border</item>
+    </style>
+    <style name="Theme.AseoAforos.container" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Theme.AseoAforos.container.client">
+        <item name="layout_constraintWidth_percent">0.4</item>
+    </style>
+    <style name="Theme.AseoAforos.container.microRoute">
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+    </style>
+    <style name="Theme.AseoAforos.cvContainer" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+    <style name="Theme.AseoAforos.etLoginStyle" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+    <style name="Theme.AseoAforos.etNewClientStyle" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">290dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:inputType">textNoSuggestions</item>
+    </style>
+    <style name="Theme.AseoAforos.etProvision" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="Theme.AseoAforos.etProvision.toll">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="Theme.AseoAforos.etRefuel" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">450dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+    <style name="Theme.AseoAforos.imgDot" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/vector_circle</item>
+        <item name="android:contentDescription">@string/dotDescription</item>
+    </style>
+    <style name="Theme.AseoAforos.spinAforo" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@drawable/shape_border_arrow_drop_down</item>
+    </style>
+    <style name="Theme.AseoAforos.spinProvision" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+    <style name="Theme.AseoAforos.spinnerCarStyle" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+    <style name="Theme.AseoAforos.spinnerCrewStyle" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">550dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">30dp</item>
+    </style>
+    <style name="Theme.AseoAforos.textArea" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/shape_border</item>
+        <item name="android:lines">5</item>
+        <item name="android:maxLines">10</item>
+        <item name="android:minLines">5</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+    <style name="Theme.AseoAforos.tvCarLabelStyle" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="Theme.AseoAforos.tvLabelStyle" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Theme.AseoAforos.tvLabelStyle.size18">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Theme.AseoAforos.tvLabelStyle.size18.clientLeft">
+        <item name="android:layout_width">120dp</item>
+    </style>
+    <style name="Theme.AseoAforos.tvLabelStyle.size28">
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="Theme.AseoAforos.tvLabelStyle.size28.microLeft">
+        <item name="android:layout_width">200dp</item>
+    </style>
+    <style name="Theme.AseoAforos.tvLabelStyle.tvCar">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+    <style name="Theme.AseoAforos.tvLabelStyle.tvIncident">
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="Theme.AseoAforos.tvLabelStyle.tvRefuel">
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="Theme.AseoAforos.tvLabelStyle.tvValueList">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="Theme.AseoAforos.tvTitleStyle" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.AseoAforos.vHrStyle" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+    <style name="Theme.AseoAforos.vMicroRouteStyle" parent="Base.Theme.AseoAforos">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activities.CarActivity">
+
+    <TextView
+        android:id="@+id/tvRefuelTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:layout_marginTop="10dp"
+        android:text="@string/newRefuel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vRefuelHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRefuelTitle" />
+
+    <TextView
+        android:id="@+id/tvRefuelPlace"
+        style="@style/Theme.AseoAforos.tvLabelStyle.tvRefuel"
+        android:text="@string/place"
+        app:layout_constraintBottom_toTopOf="@id/etRefuelPlace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vRefuelHr" />
+
+    <EditText
+        android:id="@+id/etRefuelPlace"
+        style="@style/Theme.AseoAforos.etRefuel"
+        android:autofillHints="Bomba "
+        android:hint="@string/hintPlace"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@id/tvRefuelQuantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRefuelPlace" />
+
+    <TextView
+        android:id="@+id/tvRefuelQuantity"
+        style="@style/Theme.AseoAforos.tvLabelStyle.tvRefuel"
+        android:text="@string/refuelQuantity"
+        app:layout_constraintBottom_toTopOf="@id/etRefuelQuantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etRefuelPlace" />
+
+    <EditText
+        android:id="@+id/etRefuelQuantity"
+        style="@style/Theme.AseoAforos.etRefuel"
+        android:autofillHints="11"
+        android:hint="@string/hintRefuelQuantity"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@id/tvRefuelCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRefuelQuantity" />
+
+    <TextView
+        android:id="@+id/tvRefuelCost"
+        style="@style/Theme.AseoAforos.tvLabelStyle.tvRefuel"
+        android:text="@string/cost"
+        app:layout_constraintBottom_toTopOf="@id/etRefuelCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etRefuelQuantity" />
+
+    <EditText
+        android:id="@+id/etRefuelCost"
+        style="@style/Theme.AseoAforos.etRefuel"
+        android:autofillHints="200000"
+        android:hint="@string/hintCost"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@id/imgBtnRefuelPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRefuelCost" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRefuelPhoto"
+        style="@style/Theme.AseoAforos.btn.photo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/photoDescription"
+        app:layout_constraintBottom_toTopOf="@id/btnRefuelCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRefuelAccept"
+        style="@style/Theme.AseoAforos.btn.refuel"
+        android:text="@string/accept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnRefuelCancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRefuelCancel"
+        style="@style/Theme.AseoAforos.btn.refuel"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgBtnRefuelIncident"
+        app:layout_constraintStart_toEndOf="@id/btnRefuelAccept" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRefuelIncident"
+        style="@style/Theme.AseoAforos.btn.incident"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/incidentDescriptionImg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnRefuelCancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

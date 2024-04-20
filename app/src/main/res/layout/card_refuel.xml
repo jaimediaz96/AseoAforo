@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/shape_border"
+    android:padding="12dp"
+    tools:context=".ui.activities.RefuelListActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCardRefuelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/clCardRefuelValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCardRefuelPlace"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:text="@string/place"
+            app:layout_constraintBottom_toTopOf="@id/tvCardRefuelQuantity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCardRefuelQuantity"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:text="@string/quantity"
+            app:layout_constraintBottom_toTopOf="@id/tvCardRefuelCost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardRefuelPlace" />
+
+        <TextView
+            android:id="@+id/tvCardRefuelCost"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:text="@string/cost"
+            app:layout_constraintBottom_toTopOf="@id/tvCardRefuelDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardRefuelQuantity" />
+
+        <TextView
+            android:id="@+id/tvCardRefuelDate"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:text="@string/date"
+            app:layout_constraintBottom_toTopOf="@id/tvCardRefuelTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardRefuelCost" />
+
+        <TextView
+            android:id="@+id/tvCardRefuelTime"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:layout_marginBottom="0dp"
+            android:text="@string/time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardRefuelDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCardRefuelValue"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgVCardRefuel"
+        app:layout_constraintStart_toEndOf="@id/clCardRefuelLabel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCardRefuelPlaceValue"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            app:layout_constraintBottom_toTopOf="@id/tvCardRefuelQuantityValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="BOMBA TERPEL" />
+
+        <TextView
+            android:id="@+id/tvCardRefuelQuantityValue"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            app:layout_constraintBottom_toTopOf="@id/tvCardRefuelCostValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardRefuelPlaceValue"
+            tools:text="11 GALONES" />
+
+        <TextView
+            android:id="@+id/tvCardRefuelCostValue"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            app:layout_constraintBottom_toTopOf="@id/tvCardRefuelDateValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardRefuelQuantityValue"
+            tools:text="$ 152000" />
+
+        <TextView
+            android:id="@+id/tvCardRefuelDateValue"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            app:layout_constraintBottom_toTopOf="@id/tvCardRefuelTimeValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardRefuelCostValue"
+            tools:text="1 ABRIL2024" />
+
+        <TextView
+            android:id="@+id/tvCardRefuelTimeValue"
+            style="@style/Theme.AseoAforos.tvLabelStyle.tvValueList"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCardRefuelDateValue"
+            tools:text="1:05 PM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imgVCardRefuel"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/evidencePhoto"
+        android:src="@drawable/vector_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/clCardRefuelValue"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/shape_border" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

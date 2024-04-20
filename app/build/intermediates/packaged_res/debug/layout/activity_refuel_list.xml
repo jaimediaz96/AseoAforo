@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.RefuelListActivity">
+
+    <TextView
+        android:id="@+id/tvRefuelListTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:text="@string/refuelListTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vRefuelListHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRefuelListTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRefuelList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/shape_border"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@id/bntRefuelListFinish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vRefuelListHr" />
+
+    <Button
+        android:id="@+id/bntRefuelListEdit"
+        style="@style/Theme.AseoAforos.btn.refuelList"
+        android:text="@string/editRefuel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bntRefuelListFinish"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bntRefuelListFinish"
+        style="@style/Theme.AseoAforos.btn.refuelList"
+        android:text="@string/finishRefuel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bntRefuelListEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

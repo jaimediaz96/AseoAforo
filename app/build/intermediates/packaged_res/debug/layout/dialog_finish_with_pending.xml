@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvDialogFinishWithPendingTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:text="@string/missingClients"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDialogFinishWithPendingSubTitle"
+        style="@style/Theme.AseoAforos.tvLabelStyle.size28"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogFinishWithPendingTitle"
+        tools:text="@string/questionMissingClients" />
+
+    <Button
+        android:id="@+id/btnDialogFinishWithPendingYes"
+        style="@style/Theme.AseoAforos.btn.missingClient"
+        android:text="@string/yes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnDialogFinishWithPendingNo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogFinishWithPendingSubTitle" />
+
+    <Button
+        android:id="@+id/btnDialogFinishWithPendingNo"
+        style="@style/Theme.AseoAforos.btn.missingClient"
+        android:text="@string/no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnDialogFinishWithPendingYes"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogFinishWithPendingSubTitle" />
+
+    <EditText
+        android:id="@+id/etDialogFinishWithPendingDescription"
+        style="@style/Theme.AseoAforos.textArea"
+        android:layout_marginHorizontal="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="name"
+        android:hint="@string/descriptionAbandon"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/btnDialogFinishWithPendingAccept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogFinishWithPendingSubTitle" />
+
+    <Button
+        android:id="@+id/btnDialogFinishWithPendingAccept"
+        style="@style/Theme.AseoAforos.btn"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp"
+        android:width="150dp"
+        android:text="@string/accept"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDialogFinishWithPendingDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

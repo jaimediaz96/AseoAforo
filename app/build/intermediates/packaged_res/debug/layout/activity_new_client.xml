@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activities.CarActivity">
+
+    <TextView
+        android:id="@+id/tvNewClientTitle"
+        style="@style/Theme.AseoAforos.tvTitleStyle"
+        android:layout_marginTop="10dp"
+        android:text="@string/newClient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vNewClientHr"
+        style="@style/Theme.AseoAforos.vHrStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNewClientTitle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clNewClientContainerForm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintBottom_toTopOf="@id/tvNewClientAddObservation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vNewClientHr">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewClientContainerNit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/clNewClientContainerCompanyName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/nit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNewClientNit"
+                style="@style/Theme.AseoAforos.etNewClientStyle"
+                android:autofillHints="1"
+                android:hint="@string/hintNit"
+                android:textColorHint="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewClientContainerCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/clNewClientContainerAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clNewClientContainerNit">
+
+            <TextView
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/companyName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNewClientCompanyName"
+                style="@style/Theme.AseoAforos.etNewClientStyle"
+                android:autofillHints="Metalurgia"
+                android:hint="@string/hintCompanyName"
+                android:textColorHint="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewClientContainerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/clNewClientContainerPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clNewClientContainerCompanyName">
+
+            <TextView
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/address"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNewClientAddress"
+                style="@style/Theme.AseoAforos.etNewClientStyle"
+                android:autofillHints="postalAddress"
+                android:hint="@string/hintAddress"
+                android:textColorHint="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewClientContainerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/clNewClientContainerContactName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clNewClientContainerAddress">
+
+            <TextView
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/phone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNewClientPhone"
+                style="@style/Theme.AseoAforos.etNewClientStyle"
+                android:autofillHints="phone"
+                android:hint="@string/hintPhone"
+                android:inputType="phone"
+                android:textColorHint="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewClientContainerContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/clNewClientContainerContactPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clNewClientContainerPhone">
+
+            <TextView
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/contactName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNewClientContactName"
+                style="@style/Theme.AseoAforos.etNewClientStyle"
+                android:autofillHints="name"
+                android:hint="@string/hintContactName"
+                android:textColorHint="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewClientContainerContactPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/clNewClientContainerEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clNewClientContainerContactName">
+
+            <TextView
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/contactPhone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNewClientContactPhone"
+                style="@style/Theme.AseoAforos.etNewClientStyle"
+                android:autofillHints="phone"
+                android:hint="@string/hintContactPhone"
+                android:inputType="phone"
+                android:textColorHint="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewClientContainerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/clNewClientContainerDocument"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clNewClientContainerContactPhone">
+
+            <TextView
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/email"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNewClientEmail"
+                style="@style/Theme.AseoAforos.etNewClientStyle"
+                android:autofillHints="emailAddress"
+                android:hint="@string/hintEmail"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewClientContainerDocument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clNewClientContainerEmail">
+
+            <TextView
+                style="@style/Theme.AseoAforos.tvCarLabelStyle"
+                android:text="@string/addDocument"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/cbNewClientDocument"
+                style="@style/Theme.AseoAforos.etNewClientStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvNewClientAddObservation"
+        style="@style/Theme.AseoAforos.tvCarLabelStyle"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/addObservation"
+        app:layout_constraintBottom_toTopOf="@+id/etNewClientAddObservation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etNewClientAddObservation"
+        style="@style/Theme.AseoAforos.textArea"
+        android:layout_marginBottom="15dp"
+        android:autofillHints="ok"
+        android:hint="@string/hintAddObservation"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@id/imgBtnNewClientPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNewClientAccept"
+        style="@style/Theme.AseoAforos.btn.newClient"
+        android:text="@string/accept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgBtnNewClientPhoto"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBtnNewClientPhoto"
+        style="@style/Theme.AseoAforos.btn.photo"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/photoDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnNewClientCancel"
+        app:layout_constraintStart_toEndOf="@id/btnNewClientAccept" />
+
+    <Button
+        android:id="@+id/btnNewClientCancel"
+        style="@style/Theme.AseoAforos.btn.newClient"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgBtnNewClientPhoto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

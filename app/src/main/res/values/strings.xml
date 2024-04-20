@@ -1,0 +1,281 @@
+<resources>
+    <string name="app_name">ARG-GGP</string>
+    <string name="version">Version 1.0</string>
+    <string name="alt_logo">Logo de la empresa</string>
+    <string name="hint_user">USUARIO</string>
+    <string name="hint_password">CONTRASEÑA</string>
+    <string name="forgotPassword">¿Has olvidado tu contraseña?</string>
+    <string name="button_login">INICIAR SESIÓN</string>
+
+    <string name="addEmail">INGRESE SU CORREO:</string>
+    <string name="hintAddEmail">Ingrese su correo electrónico</string>
+
+    <string name="routeTitle">RECORRIDO ASIGNADO</string>
+    <string name="id">ID:</string>
+    <string name="route">RUTA:</string>
+    <string name="municipality">MUNICIPIO:</string>
+    <string name="microRoute">MICRO-RUTA:</string>
+    <string name="date">FECHA:</string>
+    <string name="frequency">FRECUENCIA:</string>
+    <string name="customers">CLIENTES:</string>
+    <string name="plate">VEHÍCULO:</string>
+    <string name="driver">CONDUCTOR:</string>
+    <string name="accept">ACEPTAR</string>
+
+    <string name="carTitle">INICIAR RECORRIDO</string>
+    <string name="kmStart">KM INICIAL:</string>
+    <string name="carCondition">ESTADO DEL VEHÍCULO</string>
+    <string name="tireCondition">ESTADO DE LLANTAS Y SU PRESIÓN:</string>
+    <string name="fuelLevel">NIVEL COMBUSTIBLE:</string>
+    <string name="breakLights">SISTEMA DE LUCES:</string>
+    <string name="hornCondition">ESTADO BOCINA:</string>
+    <string name="brakeFluid">NIVEL DEL LÍQUIDO DE LOS FRENOS:</string>
+    <string name="oilLevel">NIVEL ACEITE:</string>
+    <string name="carDocument">DOCUMENTACIÓN DEL VEHICULO:</string>
+    <string name="addObservation">OBSERVACIONES ADICIONALES:</string>
+    <string name="hintAddObservation">Agregue aqui sus observaciones adicionales</string>
+    <string name="addCrew">INGRESAR TRIPULANTES</string>
+    <string name="changeCar">CAMBIAR VEHÍCULO</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="errorPlate">El formato de la placa es inválido. Debe ser 3 letras y 3 números.</string>
+
+    <string name="newPlate">INGRESE LA NUEVA PLACA</string>
+    <string name="hintPlate">Placa</string>
+
+    <string name="crewList">LISTA DE TRIPULANTES</string>
+
+    <string name="wordNew">NUEVO</string>
+    <string name="wordContinue">CONTINUAR</string>
+
+    <string name="removeCrew">Botón para eliminar de la lista</string>
+    <string name="crew">TRIPULANTE:</string>
+
+    <string name="progress">AVANCE:</string>
+    <string name="collected">RECOLECTADOS DE</string>
+    <string name="newCollect">NUEVO AFORO</string>
+    <string name="pauseCollect">PAUSAR RUTA</string>
+    <string name="finishRoute">FINALIZAR RUTA</string>
+    <string name="searchClient">BUSCAR CLIENTE</string>
+
+    <string name="collect">AFORO</string>
+    <string name="labelCheck">SE REALIZÓ LA RECOLECCIÓN:</string>
+    <string name="type">TIPO DE MEDICIÓN:</string>
+    <string name="noCollect">CAUSAL DE LA NO RECOLENCCiÓN:</string>
+    <string name="errorCollectNoCollect">Por favor marque la casilla de “SE REALIZÓ LA RECOLECCIÓN” si se recolecto y deje la opción “Recolección sin inconveniente“ de “CAUSAL DE LA NO RECOLECCIÓN”, en caso contrario no marque la opción de “SE REALIZÓ LA RECOLECCIÓN”</string>
+    <string name="errorRecipientEmpty">Por favor agregue al menos un recipiente</string>
+    <string name="errorQuantity">Poner una cantidad</string>
+    <string name="detailCollect">DETALLES DEL AFORO</string>
+    <string name="addRecipient">AGREGAR RECIPIENTE</string>
+    <string name="sign">FIRMA</string>
+    <string name="save">GUARDAR</string>
+    <string name="photoDescription">Toma una Foto</string>
+    <string name="ton">Tn</string>
+    <string name="meter">M^3</string>
+    <string name="delete">ELIMINAR</string>
+
+    <string name="newRecipient">NUEVO RECIPIENTE</string>
+    <string name="recipientSelectLabel">SELECCIONE EL RECIPIENTE:</string>
+    <string name="capacityRecipient">CAPACIDAD DEL RECIPIENTE:</string>
+    <string name="recipientQuantityLabel">INGRESE LA CANTIDAD DE RECIPIENTES:</string>
+    <string name="recipientTotalLabelUnit">TOTAL DE </string>
+    <string name="recipientTotalLabelUnitMeter">METROS CÚBICOS:</string>
+    <string name="recipientTotalLabelUnitTon">TONELADAS:</string>
+
+    <string name="volumeTitle">BASCULA</string>
+    <string name="quantityLabel">INGRESE EL PESO EN TONELADAS</string>
+
+    <string name="especialTitle">NUEVO TRABAJO</string>
+    <string name="selectJob">SELECCIONE EL TRABAJO</string>
+    <string name="capacityJob">CAPACIDAD DE TRABAJOS</string>
+    <string name="quantityJob">INDIQUE LA CANTIDAD DE TRABAJOS</string>
+
+    <string name="missingClients">AÚN FALTAN CLIENTES POR ATENDER</string>
+    <string name="questionMissingClients">¿ESTÁ SEGURO QUE DESEA FINALIZAR LA RUTA?</string>
+    <string name="yes">SI</string>
+    <string name="returnBase">VIAJE A BASE</string>
+    <string name="no">NO</string>
+    <string name="descriptionWhyAbandon">DESCRIBA PORQUE FINALIZA EL VIAJE:</string>
+    <string name="descriptionAbandon">Describa el por que finaliza el viaje, aunque tenga clientes sin visitar</string>
+
+    <string name="selectTypeCollect">SELECCIONE EL TIPO DE AFORO</string>
+    <string name="volumeCollect">AFORO POR VOLUMEN</string>
+    <string name="weightCollect">AFORO POR PESO</string>
+    <string name="especialCollect">SERVICIO ESPECIAL</string>
+    <string name="CollectBy">AFORO POR</string>
+
+    <string name="titlePauseRoute">¿POR QUE MOTIVO DESEA PAUSAR EL RECORRIDO?</string>
+    <string name="refueling">REPOSTAJE</string>
+    <string name="incidence">INCIDENCIA</string>
+
+    <string name="questionProvision">¿DESEA INICIAR EL VIAJE HACIA EL RELLENO SANITARIO?</string>
+
+    <string name="questionReturn">¿DESEA INICIAR EL VIAJE DE REGRESO A BASE?</string>
+
+    <string name="selectClient">SELECCIONE UN CLIENT</string>
+
+    <string name="newClient">NUEVO CLIENTE</string>
+    <string name="nit">NIT:</string>
+    <string name="address">DIRECCIÓN:</string>
+    <string name="companyName">NOMBRE DE LA EMPRESA:</string>
+    <string name="phone">TELÉFONO:</string>
+    <string name="contactName">NOMBRE DEL CONTACTO:</string>
+    <string name="contactPhone">TELÉFONO DEL CONTACTO:</string>
+    <string name="email">CORREO ELECTRÓNICO:</string>
+    <string name="addDocument">ADJUNTA ARCHIVO (RUT):</string>
+    <string name="hintNit">NIT</string>
+    <string name="hintCompanyName">Nombre de la empresa</string>
+    <string name="hintAddress">Dirección de la empresa</string>
+    <string name="hintPhone">Número de teléfono la empresa</string>
+    <string name="hintContactName">Nombre del contacto</string>
+    <string name="hintContactPhone">Número de teléfono del contacto</string>
+    <string name="hintEmail">Correo electrónico empresa</string>
+
+    <string name="newRefuel">NUEVO REPOSTAJE</string>
+    <string name="place">LUGAR:</string>
+    <string name="hintPlace">Lugar del repostaje</string>
+    <string name="refuelQuantity">CANTIDAD DE GALONES:</string>
+    <string name="hintRefuelQuantity">Cantidad de galones</string>
+    <string name="cost">VALOR:</string>
+    <string name="hintCost">Valor en pesos $</string>
+    <string name="incidentDescriptionImg">Ingresar un nuevo incidente</string>
+
+    <string name="newIncident">NUEVA INCIDENCIA</string>
+    <string name="incidentType">TIPO DE INCIDENCIA:</string>
+    <string name="hintIncidentType">Tipo de incidencia</string>
+    <string name="incidentPlace">LUGAR DE LA INCIDENCIA:</string>
+    <string name="hintIncidentPlace">Lugar donde ocurrió la incidencia</string>
+    <string name="incidentDescription">DESCRIPCION DE LA INCIDENCIA:</string>
+    <string name="hintIncidentDescription">Describa lo ocurrido con sus propias palabras</string>
+    <string name="incidentAbandon">¿ESTA INCIDENCIA AMERITA EL ABANDONO DE LA RUTA?</string>
+
+    <string name="provision">DISPOSICIÓN</string>
+    <string name="startTrip">INICIANDO VIAJE</string>
+    <string name="provisionStartTimeStart">FECHA Y HORA INICIO VIAJE:</string>
+    <string name="provisionKmStart">KILOMETRAJE INICIAL:</string>
+    <string name="quantityTolls">CANTIDAD DE PEAJES:</string>
+    <string name="firstToll">5364</string>
+    <string name="hintKmStart">12345</string>
+    <string name="one">1</string>
+    <string name="trip">POR FAVOR PRESIONE ACEPTAR CUANDO ESTE EN EL SITIO</string>
+    <string name="dotDescription">Imagen de un punto</string>
+    <string name="provisionDateTimePlace">FECHA Y HORA ENTRADA SITIO:</string>
+    <string name="provisionType">TIPO DE RESIDUO:</string>
+    <string name="provisionPlace">SITIO DE DISPOSICIÓN:</string>
+    <string name="provisionTon">PESAJE TONELADAS:</string>
+    <string name="hintProvisionTon">123.5</string>
+    <string name="provisionKmFinish">KILOMETRAJE FINAL:</string>
+    <string name="provisionFinish">FINALIZAR</string>
+    <string name="tollNumber">NUMERO DE PEAJE:</string>
+
+    <string name="returnHome">VIAJE DE REGRESO A BASE</string>
+    <string name="tripBase">POR FAVOR PRESIONE ACEPTAR CUANDO ESTE EN LA BASE</string>
+    <string name="finishRouteKm">KILOMETRAJE FINAL:</string>
+    <string name="finish">FINALIZAR</string>
+    <string name="finishObservation">OBSERVACIONES FINALES:</string>
+
+    <string name="errorPermission">Por favor acepte los permisos de cámara y almacenamiento</string>
+    <string name="errorPermissionLocation">Por favor acepte los permisos de ubicación</string>
+    <string name="evidencePhoto">FOTOS DE EVIDENCIA</string>
+
+    <string name="refuelListTitle">LISTA DE REPOSTAJES</string>
+    <string name="editRefuel">EDITAR REPOSTAJE</string>
+    <string name="finishRefuel">FINALIZAR REPOSTAJE</string>
+    <string name="errorNoPhoto">Por favor tome al menos una foto</string>
+    <string name="quantity">CANTIDAD:</string>
+    <string name="time">HORA:</string>
+    <string name="incidentList">LISTA DE INCIDENCIAS</string>
+    <string name="editIncident">EDITAR INCIDENCIA</string>
+    <string name="finishIncident">FINALIZAR INCIDENCIA</string>
+    <string name="typeIncident">TIPO DE INCIDENCIA:</string>
+    <string name="dateStart">FECHA DE INICIO:</string>
+    <string name="dateFinish">FECHA DE FIN:</string>
+
+    <string name="signTitle">FIRMA DEL USUARIO</string>
+    <string name="changeSign">CAMBIAR FIRMA</string>
+    <string name="Username">NOMBRE DEL USUARIO:</string>
+    <string name="hintUsername">Escriba su nombre aqui</string>
+    <string name="captionSign">ESCRIBA SU FIRMA SOBRE LA LÍNEA</string>
+    <string name="dispose">DISPOSICIÓN</string>
+    <string name="startRoute">INICIAR</string>
+    <string name="capacity">CAPACIDAD:</string>
+    <string name="truck">TRUCK</string>
+
+    <string name="gallons">GALONES</string>
+    <string name="checkImgDescription">IMAGEN DE COMPLETADO O NO</string>
+    <string name="deleteDescription">BOTÓN ELIMINAR</string>
+    <string name="photoTake">FOTO TOMADA</string>
+    <string name="clock">TIEMPO:</string>
+    <string name="clientSign">FIRMA DEL CLIENTE</string>
+
+    <string name="changePassword">¡Perfecto! Hemos enviado la nueva contraseña a tu correo electrónico. Por favor, revisa tu bandeja de entrada y también verifica la carpeta de correo no deseado o spam si no lo encuentras en la bandeja de entrada principal.</string>
+    <string name="errorEmail">Por favor ingrese una dirección de correo electrónico correcta</string>
+    <string name="errorEmailDB">Lo sentimos, pero no pudimos encontrar tu correo electrónico en nuestra base de datos. Por favor, asegúrate de que ingresaste la dirección de correo electrónico correcta. Si aún así no puedes recuperar tu contraseña, ponte en contacto con nuestro equipo de soporte para obtener ayuda adicional.</string>
+
+    <string name="errorNoField">Por favor complete el campo </string>
+    <string name="errorNumber">El siguiente campo debe de ser mayor a cero</string>
+
+    <string name="errorPlateDB">Lo sentimos, pero no pudimos encontrar la placa en nuestra base de datos. Por favor, asegúrate de que ingresaste la placa del camión correcta. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorUpdateTruckId">Lo sentimos, no se pudo actualizar el ID del camión. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorUpdateTruck">Lo sentimos, no se pudo actualizar el estado del camión. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorUpdateMicroRoute">Lo sentimos, no se pudo actualizar la información de la micro ruta. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorGetCapacityTruck">Lo sentimos, no se pudo obtener la capacidad de carga del camión. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorAddCrew">Lo sentimos, no se pudo guardar la lista de tripulantes. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorUpdateState">Lo sentimos, no se pudo actualizar el estado de la micro ruta. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorUpdateKmFinishTruck">Lo sentimos, no se pudo actualizar el kilometraje final del camión. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorAddTempClient">Lo sentimos, no se pudo agregar al nuevo cliente. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorAddRefuel">Lo sentimos, no se pudo agregar el repostaje. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorAddIncident">Lo sentimos, no se pudo agregar el incidente. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorAddProvision">Lo sentimos, no se pudo agregar la disposición. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+    <string name="errorAddPhoto">Lo sentimos, no se pudo agregar las fotos. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nuestro equipo de soporte para recibir asistencia. Además, asegúrate de verificar tu conexión a Internet.</string>
+
+    <string name="hintToll">Numero del peaje</string>
+    <string name="addDescription">Aumentar en uno</string>
+    <string name="removeDescription">Disminuir en uno</string>
+    <string name="errorCredential">USUARIO O CONTRASEÑA INCORRECTOS</string>
+
+    <string name="errorGetMicroRoute">Lamentablemente, no tienes asignada una micro ruta para el día de hoy. Por favor, inténtalo de nuevo más tarde o comunícate con nuestro equipo de soporte para obtener ayuda adicional.</string>
+
+    <string-array name="spinTireCondition">
+        <item>EXCELENTE</item>
+        <item>ACEPTABLE</item>
+        <item>DESGASTADO</item>
+        <item>NECESITA ATENCIÓN</item>
+        <item>DEFICIENTE</item>
+    </string-array>
+
+    <string-array name="spinFuelLevel">
+        <item>LLENO</item>
+        <item>CASI LLENO</item>
+        <item>MEDIO</item>
+        <item>CASI VACÍO</item>
+        <item>VACÍO</item>
+    </string-array>
+
+    <string-array name="spinBreakLights">
+        <item>EXCELENTE</item>
+        <item>ACEPTABLE</item>
+        <item>REGULAR</item>
+        <item>PARPADEANTES</item>
+        <item>DAÑADAS</item>
+    </string-array>
+
+    <string-array name="spinHornCondition">
+        <item>BUENO</item>
+        <item>REGULAR</item>
+        <item>MALO</item>
+    </string-array>
+
+    <string-array name="spinBrakeFluid">
+        <item>COMPLETO</item>
+        <item>ALTO</item>
+        <item>MEDIO</item>
+        <item>BAJO</item>
+        <item>MÍNIMO</item>
+    </string-array>
+
+    <string-array name="spinOilLevel">
+        <item>COMPLETO</item>
+        <item>SUFICIENTE</item>
+        <item>INSUFICIENTE</item>
+    </string-array>
+</resources>
